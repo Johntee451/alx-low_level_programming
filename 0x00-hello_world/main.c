@@ -1,21 +1,14 @@
 #include <stdio.h>
 
-
-
 /**
- *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
+ * main - the entry point
+ * Return: zero
+ */
 
 int main(void)
 
 {
-
-	    return (0);
+	printf("hello world\n");
+	return (0);
 
 }
