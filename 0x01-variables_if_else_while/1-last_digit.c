@@ -15,7 +15,7 @@ int main(void)
 	int l_dig;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	n = 980;
 	l_dig = n % 10;
 
 	if (l_dig > 5)
