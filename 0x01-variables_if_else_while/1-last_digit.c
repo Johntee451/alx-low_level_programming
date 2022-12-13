@@ -15,8 +15,7 @@ int main(void)
 	int l_dig;
 
 	srand(time(0));
-	scanf("%d", 
-			&n);
+	n = 98;
 	l_dig = n % 10;
 
 	if (l_dig > 5)
