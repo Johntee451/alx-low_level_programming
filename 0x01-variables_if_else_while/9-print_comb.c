@@ -15,14 +15,18 @@
 int main(void)
 
 {
-	int n;
+	int n = 47;
 
-	for (n = 48; n < 58; n++)
+	do
 	{
+		n++;
 		putchar(n);
 		putchar(',');
-		putchar(' ');
+		putchar(n%10 + ' ');
 	}
+
+	while (n <= 56);
+	
 
 	putchar('\n');
 	return (0);
