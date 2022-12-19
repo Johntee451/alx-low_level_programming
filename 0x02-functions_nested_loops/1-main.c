@@ -1,22 +1,13 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
 #include "main.h"
 
 /**
- * main - Entry point
- * print_alphabet(): prints lowercase letters
- * Return: Always 0 (Success)
+ * main - check the code
+ * Return: Always 0.
  */
 
-void print_alphabet(void)
+int main(void)
 {
-	char n;
+	print_alphabet();
 
-	for (n = 'a'; n <= 'z'; ++n)
-	{
-		putchar(n);
-	}
-
-	putchar('\n');
+	return (0);
 }
