@@ -3,19 +3,19 @@
 /**
  * _islower - check if argument is lowercase or not.
  * @c: accepts interger value.
- * Return: Always 0.
+ * @r: stores the results.
+ * return: Always 0.
  */
 
 int _islower(int c)
 {
+	int r;
 
-	if (islower(c))
-	{
-		return (1);
-	}
+	r = _islower(c);
 
-	else
-	{
-		return (0);
-	}
+	putchar(r + '0');
+
+	putchar('\n');
+
+	return (0);
 }
