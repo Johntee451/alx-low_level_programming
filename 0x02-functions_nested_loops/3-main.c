@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	_islower('H');
+	_islower(108);
 
 	return (0);
 }
