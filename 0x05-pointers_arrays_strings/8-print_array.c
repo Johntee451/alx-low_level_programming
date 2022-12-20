@@ -8,7 +8,7 @@
 
 void print_array(int *a, int n)
 {
-	int arr[5] = {98, 402, -198, 298, -1024};
+	int arr[5] = {-198, 298, 402, -1024, 98};
 	int i;
 
 	n = 5;
