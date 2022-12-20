@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * rev_string - reverses string.
+ * @s: pointer variable.
+ */
+
 void rev_string(char *s)
 {
 	int i = -1;
