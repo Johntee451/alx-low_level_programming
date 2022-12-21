@@ -18,14 +18,9 @@ void print_line(int n)
 		putchar('\n');
 	}
 
-	else if ((n == 0) || (n < 0))
-	{
-		putchar('\n');
-	}
-
 	else
 	{
-		putchar('\n');
+		if ((n == 0) || (n < 0))
+			putchar('\n');
 	}
-
 }
