@@ -13,6 +13,7 @@ void print_line(int n)
 		{
 			putchar(95);
 		}
+		putchar('\n');
 	}
 
 	else if ((n == 0) || (n < 0))
