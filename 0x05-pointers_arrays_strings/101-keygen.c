@@ -9,7 +9,15 @@
 
 int main(void)
 {
-	printf("Tada! Congrats\n");
+	int n;
+
+
+
+	srand(time(0));
+
+	n = rand();
+
+	printf("%d\n", n);
 
 	return (0);
 }
