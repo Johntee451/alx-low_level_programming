@@ -12,5 +12,10 @@ int _isupper(int c)
 
 	d = isupper(c);
 
+	if (d)
+		return 1;
+	else
+		return 0;
+
 	return (d);
 }
