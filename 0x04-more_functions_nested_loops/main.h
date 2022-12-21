@@ -5,6 +5,9 @@
 #include <stdlib.h>
 
 
+int _isupper(int c);
+int isupper(int c);
+
 int mul(int a, int b);
 
 void print_numbers(void);
