@@ -20,5 +20,7 @@ char *string_toupper(char *ptr);
 
 char *cap_string(char *ptr);
 
+char *leet(char *s);
+
 
 #endif /* MAIN_H */
