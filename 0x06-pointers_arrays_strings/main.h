@@ -18,5 +18,7 @@ void print_array(int *a, int n);
 
 char *string_toupper(char *ptr);
 
+char *cap_string(char *ptr);
+
 
 #endif /* MAIN_H */
