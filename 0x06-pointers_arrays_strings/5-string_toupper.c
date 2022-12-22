@@ -3,24 +3,20 @@
 
 /**
  *string_toupper - check the code
- *@ptr: pointer variable
- *Return: ptr.
+ *@s: pointer variable
+ *Return: r.
  */
 
-char *string_toupper(char *ptr)
+char *string_toupper(char *s)
 {
-	char s[100];
-	int i;
+	char *r = s;
 
-	*ptr = s[100];
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		if (s[i] >= 'a' && s[i] <= 'z')
-		{
-			s[i] = s[i] - 32;
-		}
+		if (*s >= 'a' && *s <= 'z')
+			*s -= 32;
+		s++;
 	}
 
-	return (ptr);
+	return (r);
 }
