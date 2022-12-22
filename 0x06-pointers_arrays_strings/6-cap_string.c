@@ -4,41 +4,32 @@
 
 /**
  *cap_string - check the code
- *@ptr: pointer variable
+ *s: pointer variable
  *Return: ptr.
  */
 
-char *cap_string(char *ptr)
+char *cap_string(char *s)
 {
+	char *r = s;
+
 	int i;
-	char str[100];
 
-	*ptr = str[100];
+	char a[] = " \t\n,.!?\"(){}";
 
-	for (i = 0; str[i] != '\0'; i++)
+	int cap = 1;
+
+	while (*s)
 	{
-		if (i == 0)
+		if (cap && *s >= 'a' && *s <= 'z')
+			*s -= 32;
+		cap = 0;
+		for (i = 0; i < 12; i++)
 		{
-			if ((str[i] >= 'a') && (str[i] <= 'z'))
-				str[i] = str[i] - 32;
-			continue;
+			if (*s == a[i])
+				cap = 1;
 		}
-
-		if (str[i] == ' ')
-		{
-			++i;
-			if ((str[i] >= 'a') && (str[i] <= 'z'))
-			{
-				str[i] = str[i] - 32;
-				continue;
-			}
-		}
-
-		else
-		{
-			if ((str[i] >= 'a') && (str[i] <= 'z'))
-				str[i] = str[i] + 32;
-		}
+		s++;
 	}
-	return (ptr);
+
+	return (r);
 }
