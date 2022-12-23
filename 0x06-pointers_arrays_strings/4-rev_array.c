@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * reverse_array - check the code
- * print_array - prints array
- * @a: an array of integers
- * @n: the number of elements to swap
+ * print_array - checks the array.
+ * @a: an array of integers.
+ * @n: the number of elements to swap.
  * Return: nothing.
 */
 
@@ -25,6 +24,13 @@ void print_array(int *a, int n)
 	}
 	printf("\n");
 }
+
+/**
+ * reverse_array - rev array.
+ * @a: array of integer.
+ * @n: the num.
+ * Return: nothing.
+ */
 
 void reverse_array(int *a, int n)
 {
