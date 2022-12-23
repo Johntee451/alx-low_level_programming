@@ -1,33 +1,23 @@
-#include <stdlib.h>
-
 #include <stdio.h>
 
-#include <time.h>
-
 /**
- * main - Entry point
- *
+ * main - print all digits in base 10 separated by commas
  * Return: Always 0 (Success)
  */
 
-
-
 int main(void)
-
 {
-	int n = 47;
+	int i;
 
-	do
+	for (i = 48; i <= 57; i++)
 	{
-		n++;
-		putchar(n);
-		putchar(',');
-		putchar(n%10 + ' ');
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-
-	while (n <= 56);
-	
-
 	putchar('\n');
 	return (0);
 }
