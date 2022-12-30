@@ -3,8 +3,7 @@
 /**
  * _islower - check if argument is lowercase or not.
  * @c: accepts interger value.
- * @r: stores the results.
- * return: Always 0.
+ * Return: Always 1 or 0.
  */
 
 int _islower(int c)
