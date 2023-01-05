@@ -7,7 +7,13 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	int i;
+	char c[] = "_putchar\n";
+
+	for (i = 0; i < (int)sizeof(c); i++)
+	{
+		_putchar(*(c + i));
+	}
 
 	return (0);
 }
